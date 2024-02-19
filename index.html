@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra- Online Shopping for Men,Women, Kids</title>
+    <link rel="icon" href="/logo1.webp" type="image/png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="logo"><img src="https://mumbaimirror.indiatimes.com/photo/80601325.cms" alt=""></li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>Kids</li>
+            <li>Home & Living</li>
+            <li>Kids</li>
+            <li>Studio <sup>NEW</sup> </li>
+            <li><input type="search" name="search" id="search_bar" placeholder="Search for products,brands & more"></li>
+            <li class="profile"><img src="/user.png" alt="">Profile</li>
+            <li class="wish"><img src="/wishlist.png" alt="">Wishlist</li>
+            <li class="bag"><img src="/bag.png" alt="">Bag</li>
+        </ul>
+    </div>
+
+    <div class="timer" id="timer"></div>
+
+    <div class="announcements">
+       <p>Flat Rs. 400 off on your first order via <img src="https://mumbaimirror.indiatimes.com/photo/80601325.cms" alt="" width="50px" height="30px">app</p>
+    </div>
+
+    <div class="promos_slider">
+       <div class="promos">
+           <video src="/promo1.mp4"  loop controls class="promo"></video>
+         <img src="https://cdn.grabon.in/gograbon/images/merchant/1670579681259.jpg" alt="" class="promo">
+        <img src="https://www.zingoy.com/blog/wp-content/uploads/2021/06/Myntra-End-of-Reason-Sale-Offers-2021-blog.jpg" alt="" class="promo">
+       <img src="https://www.dealsshutter.com/uploads/social_images/stores/myntra-social-12-oct-1539335161.png" alt="" class="promo">
+    </div>
+
+    <button class="previous" onclick="goPrev()">&#10094;</button>
+    <button class="next" onclick="goNext()">&#10095;</button>
+
+    <h1 class="card_intro">SHOP BY CATEGORY</h1>
+    <div class="cards_row1">
+        <div class="card">
+            <div class="card_img"><img src="https://content.jdmagicbox.com/comp/pune/u8/020pxx20.xx20.190619171824.t7u8/catalogue/style-mens-wear-pune-1dmvc986qs.jpg?clr=422e24" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Men's Active Wear <br><b>30 to 70% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://i.pinimg.com/originals/d3/29/cf/d329cfb75d0cfef9da2f503dce539a12.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Kid's Summer Arrivals <br><b>Upto 30% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://static.vecteezy.com/system/resources/previews/008/826/260/original/new-arrival-summer-fashion-poster-template-free-vector.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Women's Summer Arrival <br><b>Upto 50% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://img.pikbest.com/origin/05/76/31/02EpIkbEsTziU.png!bw700" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Wathces <br><b>50 to 70% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6703f025397249.56344a20bada1.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Men's Ethnic Wear <br><b>Upto 50% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/men%27s-shoes-design-template-04942b6c1964faa7398a9b026598c6db_screen.jpg?ts=1651739355" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Men's Footwear <br><b>Upto to 70% off</b> </p>
+            </div>
+        </div>
+    </div>
+    <div class="cards_row2">
+        <div class="card">
+            <div class="card_img"><img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/heels-women-shoes-sandals-fashion-sale-flyer-design-template-9d7766f9417f2bb7400bd037b2184620_screen.jpg?ts=1663930892" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Women's Footwear <br><b>Upto 50% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://i.pinimg.com/originals/0b/56/c7/0b56c76924081719cc974d592e65a8cb.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Bags, Wallets, Belts <br><b>40 to 70% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://i.pinimg.com/236x/f3/fd/7f/f3fd7f7491c1283e51492e1d131f3136.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Jewellery<br><b>30 to 50% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://i.pinimg.com/736x/99/47/6d/99476dd56a9956bff29ab8378040e93d.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Eyewear<br><b>30 to 70% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://www.shutterstock.com/image-vector/summer-vacation-vector-illustration-composition-260nw-1944620959.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Trolley Bags<br><b>30 to 40% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://i.pinimg.com/736x/ed/15/e0/ed15e04aaab2bc48886d50618d383602.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Perfumes<br><b>50 to 60% off</b> </p>
+            </div>
+        </div>
+    </div>
+    <div class="cards_row1">
+        <div class="card">
+            <div class="card_img"><img src="https://content.jdmagicbox.com/comp/pune/u8/020pxx20.xx20.190619171824.t7u8/catalogue/style-mens-wear-pune-1dmvc986qs.jpg?clr=422e24" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Men's Active Wear <br><b>30 to 70% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://i.pinimg.com/originals/d3/29/cf/d329cfb75d0cfef9da2f503dce539a12.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Kid's Summer Arrivals <br><b>Upto 30% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://static.vecteezy.com/system/resources/previews/008/826/260/original/new-arrival-summer-fashion-poster-template-free-vector.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Women's Summer Arrival <br><b>Upto 50% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://img.pikbest.com/origin/05/76/31/02EpIkbEsTziU.png!bw700" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Wathces <br><b>50 to 70% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6703f025397249.56344a20bada1.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Men's Ethnic Wear <br><b>Upto 50% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/men%27s-shoes-design-template-04942b6c1964faa7398a9b026598c6db_screen.jpg?ts=1651739355" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Men's Footwear <br><b>Upto to 70% off</b> </p>
+            </div>
+        </div>
+    </div>
+    <div class="cards_row2">
+        <div class="card">
+            <div class="card_img"><img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/heels-women-shoes-sandals-fashion-sale-flyer-design-template-9d7766f9417f2bb7400bd037b2184620_screen.jpg?ts=1663930892" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Women's Footwear <br><b>Upto 50% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://i.pinimg.com/originals/0b/56/c7/0b56c76924081719cc974d592e65a8cb.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Bags, Wallets, Belts <br><b>40 to 70% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://i.pinimg.com/236x/f3/fd/7f/f3fd7f7491c1283e51492e1d131f3136.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Jewellery<br><b>30 to 50% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://i.pinimg.com/736x/99/47/6d/99476dd56a9956bff29ab8378040e93d.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Eyewear<br><b>30 to 70% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://www.shutterstock.com/image-vector/summer-vacation-vector-illustration-composition-260nw-1944620959.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Trolley Bags<br><b>30 to 40% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://i.pinimg.com/736x/ed/15/e0/ed15e04aaab2bc48886d50618d383602.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Perfumes<br><b>50 to 60% off</b> </p>
+            </div>
+        </div>
+    </div>
+    <div class="cards_row1">
+        <div class="card">
+            <div class="card_img"><img src="https://content.jdmagicbox.com/comp/pune/u8/020pxx20.xx20.190619171824.t7u8/catalogue/style-mens-wear-pune-1dmvc986qs.jpg?clr=422e24" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Men's Active Wear <br><b>30 to 70% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://i.pinimg.com/originals/d3/29/cf/d329cfb75d0cfef9da2f503dce539a12.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Kid's Summer Arrivals <br><b>Upto 30% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://static.vecteezy.com/system/resources/previews/008/826/260/original/new-arrival-summer-fashion-poster-template-free-vector.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Women's Summer Arrival <br><b>Upto 50% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://img.pikbest.com/origin/05/76/31/02EpIkbEsTziU.png!bw700" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Wathces <br><b>50 to 70% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6703f025397249.56344a20bada1.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Men's Ethnic Wear <br><b>Upto 50% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/men%27s-shoes-design-template-04942b6c1964faa7398a9b026598c6db_screen.jpg?ts=1651739355" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Men's Footwear <br><b>Upto to 70% off</b> </p>
+            </div>
+        </div>
+    </div>
+    <div class="cards_row2">
+        <div class="card">
+            <div class="card_img"><img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/heels-women-shoes-sandals-fashion-sale-flyer-design-template-9d7766f9417f2bb7400bd037b2184620_screen.jpg?ts=1663930892" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Women's Footwear <br><b>Upto 50% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://i.pinimg.com/originals/0b/56/c7/0b56c76924081719cc974d592e65a8cb.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Bags, Wallets, Belts <br><b>40 to 70% off</b> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img"><img src="https://i.pinimg.com/236x/f3/fd/7f/f3fd7f7491c1283e51492e1d131f3136.jpg" alt="" height="200px" width="170px"></div>
+            <div class="card_des">
+                <p>Jewellery<br><b>30 to 50% off</b> </p>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+
+    <div class="other_section">
+        <div class="link_section">
+            <div class="links">
+                <h2>Online Shopping</h2>
+                <br>
+                <ul>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">Kids</a></li>
+                    <li><a href="">Home & Living</a></li>
+                    <li><a href="">Beauty</a></li>
+                    <li><a href="">Gift Cards</a></li>
+                    <li><a href="">Myntra Insider</a></li>
+                </ul>
+                <br>
+    
+                <h2>USEFUL LINKS</h2>
+                <br>
+                <ul>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Site Map</a></li>
+                    <li><a href="">Corporate Information</a></li>
+                    <li><a href="">Whithat</a></li>
+                    <li><a href="">Cleartrip</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="social_medias">
+            <div class="social_medias1">
+                <h3>EXPERIENCE MYNTRA APP ON MOBILE</h3>
+                <a href="https://play.google.com/store/search?q=myntra&c=apps&hl=en_IN&gl=US" target="_blank"> <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="" width="200px" height="80px"></a>
+                <a href="https://apps.apple.com/in/app/myntra-fashion-shopping-app/id907394059" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/640px-Download_on_the_App_Store_Badge.svg.png" alt="" width="200px" height="57px" class="apple"></a>
+            </div>
+
+            <div class="social_medias2">
+                <h4>KEEP IN TOUCH</h4>
+                <ul>
+                    <li><a href="facebook.com/myntra" target="_blank"><img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="" width="20px" height="20px"></a></li>
+                    <li><a href="twitter.com/myntra" target="_blank"><img src="https://img.freepik.com/free-vector/twitter-new-2023-x-logo-white-background-vector_1017-45422.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1707350400&semt=ais" alt="" width="20px" height="20px"></a></li>
+                    <li><a href="https://www.youtube.com/@myntra" target="_blank"><img src="https://i.pinimg.com/736x/3a/36/20/3a36206f35352b4230d5fc9f17fcea92.jpg" height="20px"></a></li>
+                    <li><a href="instagram.com/myntra" target="_blank"><img src="https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg" alt="" width="20px" height="20px"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="myntra_features">
+            <!-- <div class="feature_1">100% original product</div>
+            <div class="feature_2">14 days return policy</div> -->
+            <h1><b><i><img src="https://logowik.com/content/uploads/images/100-original5165.logowik.com.webp" alt="" height="30px" width="40px">100% ORIGINAL</i></b> guarantee for all products at myntra.com</h1>
+            <h1><img src="https://pilotworld.fi/wp-content/uploads/2018/06/returns.png" alt=""  height="30px" width="40px">Return within <b>14days</b> of receiving your order</h1>
+        </div>
+
+    </div>
+    <div class="more_links">
+        <h3>Popular Searches</h3><br>
+    <p>Makeup | Dresses For Girls|  T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags  Ladies Watches | Bags | Sport| Shoes  Reebok Shoes | Puma Shoes | Boxers | Wallets | Tops | Earrings | Fastrack Watches | Kurtis | Nike | Smart Watches|  Titan Watches | Designer Blouse | Gowns|  Rings | Cricket Shoes|  Forever 21 | Eye Makeup | Photo Frames | Punjabi Suits|  Bikini|  Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles | Bras | Suit | Chinos  Shoes | Adidas Shoes | Woodland Shoes | Jewellery | Designers Sarees</p>
+    </div>
+    <hr>
+
+    <div class="footer">
+        <b>&#169; </b> Designed by <b id="designer">SMARAN SATAPATHY</b>
+        | <a href="https://github.com/SmaranSatapathy" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" height="20px" width="20px"></a>
+        <a href="mailto:smaransatapathy31@gmail.com" target="_blank"> <img src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo.png" alt="" height="25px" width="43px"></a>
+        <a href="https://www.linkedin.com/in/smaran-satapathy-388270257/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/480px-LinkedIn_logo_initials.png" alt="" height="20px" width="20px"> </a>
+        <a href="https://www.instagram.com/smaransatapathy/" target="_blank"> <img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?size=338&ext=jpg&ga=GA1.1.87170709.1707350400&semt=ais" alt="" height="30px" width="23px"></a>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
